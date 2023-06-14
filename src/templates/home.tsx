@@ -67,6 +67,7 @@ const Home = ({ document }: TemplateRenderProps) => {
       config={{
         apiKey: "f3907e66efcee33beedb11067dd0a832",
         botId: "nyc-blog",
+        saveToSessionStorage: false,
       }}
     >
       <Main>
@@ -151,9 +152,9 @@ const Home = ({ document }: TemplateRenderProps) => {
               </div>
             </div>
           </div>
+          <ChatPanel />
         </Container>
       </Main>
-      <ChatPanel />
     </ChatHeadlessProvider>
   );
 };
